@@ -1,6 +1,13 @@
 public class resources {
+
     public static boolean isPrime(long num) {
-        for(int divider = 2; divider < (long)Math.sqrt(num); divider++) {
+        if(num < 0) {
+            throw new IllegalArgumentException("Number must be natural");
+        }
+        if(num == 0 || num == 1) {
+            return false;
+        }
+        for(int divider = 2; divider <= (long)Math.sqrt(num); divider++) {
             if(num % divider == 0) {
                 return false;
             }
