@@ -12,4 +12,15 @@ public class ResourcesTests {
         Assertions.assertEquals(true, resources.isPrime(5));
         Assertions.assertEquals(false, resources.isPrime(6));
     }
+
+    @Test
+    void factorsTest() {
+        Assertions.assertArrayEquals(new Integer[] {1, 2, 4, 7, 14, 28}, resources.factors(28).toArray());
+        Assertions.assertEquals(6, resources.factorsQty(28));
+    }
+
+    @Test
+    void triangleNumberTest() {
+        Assertions.assertEquals(28, resources.triangleNumber(7));
+    }
 }

@@ -43,4 +43,23 @@ public class Tests {
         Assertions.assertEquals(23514624000L, p008.main(null));
     }
 
+    @Test
+    void p009Test() {
+        Assertions.assertEquals(31875000, p009.main(null));
+    }
+
+    @Test
+    void p010Test() {
+        Assertions.assertEquals(142913828922L, p010.main(null));
+    }
+
+    @Test
+    void p011Test() {
+        Assertions.assertEquals(70600674, p011.main(null));
+    }
+
+    @Test
+    void p012Test() {
+        Assertions.assertEquals(76576500, p012.main(null));
+    }
 }
